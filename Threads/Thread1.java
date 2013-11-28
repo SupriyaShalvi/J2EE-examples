@@ -1,0 +1,35 @@
+
+
+public class Thread1 implements Runnable {
+
+ public void run() {
+//  try {
+//   Thread.sleep(2);
+//  } catch (InterruptedException e) {
+//   // TODO Auto-generated catch block
+//   e.printStackTrace();
+//  }
+  callSomeMethod();
+//  for(int i=0;i<10;i++){
+//   
+//   System.out.println(i);
+//
+//  }
+ }
+
+ private void callSomeMethod() {
+
+  call2ndMethod();
+ }
+
+ private void call2ndMethod() {
+
+  for(int i=0;i<50000;i++)
+  System.out.println("Running thread is :"+Thread.currentThread().getName());
+//  for(int i=0;i<10;i++){
+//   
+//   System.out.println(i);
+//
+//  }
+ }
+}

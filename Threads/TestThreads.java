@@ -1,0 +1,35 @@
+package Threads;
+
+public class TestThreads {
+
+ /**
+  * @param args
+  */
+ public static void main(String[] args) {
+  
+
+  Runnable r = new Thread1();
+  Thread t1 = new Thread(r);
+  Thread t2 = new Thread(r);
+  
+//  t1.setPriority(Thread.MAX_PRIORITY);
+//  Thread t2 = new Thread2();
+
+//  t1.setPriority(7);
+//  for(int i=100;i<900;i+=100){
+//   
+//   System.out.println(i);
+//   if (i==500)
+//    t1.start();
+//  
+//  }
+  t1.start();
+  t2.start();
+  
+  for(int i=0;i<10;i++)
+   System.out.println("Doing something in main");
+  
+  System.out.println("In main method");
+ }
+
+}

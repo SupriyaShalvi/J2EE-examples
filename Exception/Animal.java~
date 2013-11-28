@@ -1,0 +1,38 @@
+import java.io.Serializable;
+
+public class Animal implements Serializable{
+
+	private int legs;
+	private String foodHabit;
+
+	public void onEarth() {
+
+		System.out.println("No Behaviour specified on Earth");
+	}
+
+	public void inWater() {
+
+		System.out.println("No Behaviour specified in Water");
+	}
+
+	public void inAir() {
+
+		System.out.println("No Behaviour specified in Air");
+	}
+
+	public int getLegs() {
+		return legs;
+	}
+
+	public void setLegs(int legs) {
+		this.legs = legs;
+	}
+
+	public String getFoodHabit() {
+		return foodHabit;
+	}
+
+	public void setFoodHabit(String foodHabit) {
+		this.foodHabit = foodHabit;
+	}
+}
